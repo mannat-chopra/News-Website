@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  position: relative;
+}
+
+/* Global CSS */
+.obj-width {
+  max-width: 1200px;
+  margin: auto;
+}
+.navBar {
+  display: flex;
+  height: 15vh;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0f0f0f;
+  color: white;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+}
+.logo a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  font-size: 2.2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.searchContainer {
+  padding: 10px;
+}
+#SearchInput {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#searchButton {
+  padding: 10px 20px;
+  background-color: #0f0f0f;
+  color: white;
+  border: 1px solid white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.mainContainer {
+  display: flex;
+  /* margin: 10px 0; */
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 0;
+  flex-wrap: wrap;
+}
+.newsCard {
+  width: 280px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 10px;
+}
+.newsCard:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.newsCard img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.newsCard h2 {
+  color: #333;
+  font-size: 1.7rem;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.newsCard p {
+  padding-top: 0.7rem;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 500px) {
+  .logo a {
+    font-size: 1.5rem;
+  }
+  .searchContainer {
+    padding: 5px;
+  }
+  #SearchInput {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+  #searchButton {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+  .newsCard {
+    width: 100%;
+}
+}
